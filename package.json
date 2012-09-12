@@ -1,0 +1,24 @@
+{
+  "name": "JSONFormatter",
+  "description": "A JSON to HTML formatter for use with AMD/Non-AMD",
+  "version": "0.1.0",
+  "author": {
+    "name": "Chris Miller",
+    "email": "cmille142@gmail.com",
+    "url": "http://chrismiller.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iamchrismiller/JSONFormatter.git"
+  },
+  "scripts": {
+    "test": "grunt jasmine"
+  },
+  "bugs": {
+    "url": "https://github.com/iamchrismiller/JSONFormatter/issues"
+  },
+  "devDependencies": {
+    "grunt-jasmine-runner": "latest",
+    "grunt": "latest"
+  }
+}

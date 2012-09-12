@@ -1,0 +1,45 @@
+#json {
+  font-family : monospace;
+  font-size   : 1.1em;
+
+  ul {
+    list-style : none;
+    margin     : 0 0 0 2em;
+    padding    : 0;
+
+    li {
+      position : relative;
+
+      span {
+
+        &.null {
+          color : red;
+        }
+
+        &.boolean {
+          color : blue;
+        }
+
+        &.number {
+          color : blue;
+        }
+
+        &.string {
+          color : green;
+        }
+
+        &.prop {
+          font-weight : bold;
+        }
+      }
+
+      &:after {
+        content : ',';
+      }
+
+      &:last-child:after {
+        content : '';
+      }
+    }
+  }
+}
