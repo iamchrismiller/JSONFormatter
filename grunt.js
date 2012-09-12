@@ -17,10 +17,12 @@ module.exports = function(grunt) {
       files: ['<config:jasmine.specs>','src/**/*js'],
       tasks: 'jasmine'
     },
+
     jasmine : {
-      src : 'src/**/*.js',
+      src : ['vendor/jquery.min.js','src/**/*.js'],
       specs : 'spec/**/*.js'
     },
+
     jshint: {
       options: {
         curly: false,
@@ -48,6 +50,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-jasmine-runner');
 
-  // Default task.
   grunt.registerTask('default', 'lint min jasmine');
+  grunt.registerTask('test', 'jasmine');
+
 };
