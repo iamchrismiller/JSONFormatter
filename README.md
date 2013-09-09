@@ -12,7 +12,7 @@ A JSON to HTML formatter for use with AMD/Non-AMD
 
 ## Usage
 
-  new JSONFormatter(options).toHtml(json);
+  `new JSONFormatter(options).toHtml(json);`
 
   Supported `options`
     - number
