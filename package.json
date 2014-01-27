@@ -1,7 +1,7 @@
 {
   "name": "json-formatter",
   "description": "A JSON to HTML formatter for use with AMD/Non-AMD",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Chris Miller",
     "email": "cmille142@gmail.com",
@@ -17,8 +17,13 @@
   "bugs": {
     "url": "https://github.com/iamchrismiller/JSONFormatter/issues"
   },
-  "devDependencies": {
-    "grunt-jasmine-runner": "latest",
-    "grunt": "latest"
+  "dependencies": {
+    "grunt-contrib-jshint": "~0.5.4",
+    "grunt-contrib-jasmine": "~0.4.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-cli": "~0.1.13",
+    "grunt": "~0.4.2",
+    "grunt-contrib-sass": "~0.7.0"
   }
 }

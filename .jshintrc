@@ -1,0 +1,19 @@
+{
+  "curly"   : false,
+  "eqeqeq"  : true,
+  "immed"   : true,
+  "latedef" : true,
+  "newcap"  : true,
+  "noarg"   : true,
+  "sub"     : true,
+  "undef"   : true,
+  "boss"    : true,
+  "eqnull"  : true,
+  "maxerr"  : 100000,
+  "browser"     : true,
+  "globals" : {
+    "describe"    : true,
+    "exports"    : true,
+    "ENV"        : true
+  }
+}
