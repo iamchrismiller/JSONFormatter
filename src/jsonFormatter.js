@@ -56,11 +56,10 @@
 
           //Recursive Methods
           case 'object':
-            output += this.callDataTypeMethod(valueType, this.objectToHTML, key, value);
-            break;
-          case 'array' :
-            if (value.constructor === Array) {
+            if (value instanceof Array) {
               output += this.callDataTypeMethod(valueType, this.arrayToHTML, key, value);
+            } else {
+              output += this.callDataTypeMethod(valueType, this.objectToHTML, key, value);
             }
             break;
         }
